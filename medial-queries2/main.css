@@ -1,3 +1,100 @@
+* {
+  outline: 1px solid papayawhip;
+
+}
 body {
   background: papayawhip;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
 }
+
+.container {
+  background: papayawhip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+header {
+  background: purple;
+  flex-grow: 1;
+  margin: 10px
+}
+nav {
+  background: teal;
+  flex-grow: 3;
+  margin: 10px
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin: 5px;
+  height: 8vh;
+  
+}
+
+.c {
+  background: red;
+  width: 100vw;
+  margin: 5px
+}
+
+.d {
+  background: red;
+  width: 100vw;
+  margin: 5px
+}
+
+.e {
+  background: red;
+  width: 100vw;
+  margin: 5px
+}
+
+footer {
+  background: green;
+  flex-grow: 1;
+  margin: 10px
+}
+
+@media(min-width: 600px) {
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  header {
+    width: 100vw;
+    height: 25vh;
+  }
+
+  nav {
+    min-width: 60vw;
+    max-width: 50vw;
+    min-height: 25vh;
+    max-height: 100vh;
+  }
+
+  .main {
+    min-width: 60vw;
+    max-width: 50vw;
+    min-height: 25vh;
+    max-height: 100vh;
+  }
+
+  footer {
+    max-width: 35vw;
+    max-height: 100vh;
+  }
+
+
+}
+
+
