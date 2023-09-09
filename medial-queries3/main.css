@@ -1,9 +1,9 @@
 * {
-  outline: 1px solid grey;
-}
+  outline: 1px solid purple;
 
+}
 body {
-  background: peachpuff;
+  background: black;
   color: black;
   text-align: center;
   font-size: 2em;
@@ -11,60 +11,68 @@ body {
 }
 
 .container {
+  background: teal;
   display: flex;
-  flex-wrap: wrap;
+  min-height: 100vh;
   flex-direction: column;
-  height: 100vh;
+  justify-content: space-between;
 }
 
-.a {
-  background: orchid;
-  flex-grow: 1;
-  margin: 5px;
-}
-.b, .c, .d, .e, .f, .g {
-  background: orchid;
-  margin: 5px;
+header {
+  background: teal;
+  flex-grow: 2;
+  margin: 5px
 }
 
-.main {
+footer {
+  background: teal;
+  flex-grow: 4;
+  margin: 5px
+}
+
+main {
+  /* text-align: center; */
+  /* flex-direction: row; */
+  flex-grow:3;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 2;
+  /* margin: 5px; */
+}
+
+/* .b2 {
+  width: 100%;
+  margin: 5px;
+} */
+
+.b2, .b3, .b4, .b5, .b6, .b7 {
+  width: 31.3%;
   margin: 5px;
 }
 
-.main div {
-  width: 31.2%;
-}
-
-
-.h {
-  background: orchid;
-  flex-grow: 4;
-  margin: 5px;
-}
-
-@media(min-width: 600px) {
-
+@media (min-width: 600px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
-
- .a {
+  header {
     width: 100vw;
-    min-height: 25vh;
-  }
-
-  .b, .c, .d, .e, .f, .g {
-    max-width: 25vw;
-    max-height: 25vh;
+    flex-grow: 2;
+    /* height: 25vh; */
   }
 
   footer {
-    max-width: 35vw;
-    max-height: 100vh;
+    background: teal;
+    flex-grow: 2;
+    margin: 5px
+  }
+
+  .b2, .b3, .b4, .b5, .b6, .b7 {
+    width: 32.22%;
+    margin: 5px;
+  }
+  
+  main, footer, header  {
+    margin: 1em;;
   }
 }
 
