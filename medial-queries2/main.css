@@ -1,9 +1,9 @@
 * {
-  outline: 1px solid grey;
+  outline: 1px solid purple;
 
 }
 body {
-  background: papayawhip;
+  background: black;
   color: black;
   text-align: center;
   font-size: 2em;
@@ -11,35 +11,39 @@ body {
 }
 
 .container {
-  background: papayawhip;
+  background: teal;
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-header {
-  background: peachpuff;
-  flex-grow: 10;
-  margin: 1px
-}
-nav {
-  background: peachpuff;
-  flex-grow: 3;
-  margin: 10px
-}
-
-.main {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
+header, footer {
+  background: teal;
   flex-grow: 1;
-  margin: 5px;
-  height: 8vh;
-  
+  margin: 5px
 }
 
-.c {
+main {
+  /* text-align: center; */
+  /* flex-direction: row; */
+  flex-grow:3;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 5px; */
+}
+
+.b2 {
+  width: 100%;
+  margin: 5px;
+}
+
+.b3, .b4, .b5 {
+  width: 31.2%;
+  margin: 5px;
+}
+
+/* .c {
   background: peachpuff;
   width: 100vw;
   margin: 5px
@@ -55,46 +59,26 @@ nav {
   background: peachpuff;
   width: 100vw;
   margin: 5px
-}
+} */
 
-footer {
-  background: peachpuff;
-  flex-grow: 1;
-  margin: 10px
-}
 
-@media(min-width: 600px) {
-
+@media (min-width: 600px) {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   header {
     width: 100vw;
-    height: 25vh;
+    /* height: 25vh; */
   }
-
-  nav {
-    min-width: 60vw;
-    max-width: 50vw;
-    min-height: 25vh;
-    max-height: 100vh;
+  .b3, .b4, .b5 {
+    width: 32.49999%;
+    margin: 5px;
   }
-
-  .main {
-    min-width: 60vw;
-    max-width: 50vw;
-    min-height: 25vh;
-    max-height: 100vh;
+  
+  main, footer, header  {
+    margin: 1em;;
   }
-
-  footer {
-    max-width: 35vw;
-    max-height: 100vh;
-  }
-
-
 }
 
 
